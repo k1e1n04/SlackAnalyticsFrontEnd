@@ -1,0 +1,10 @@
+{
+    "appenders": {
+      "logFile": { "type": "file", "filename": "error.log" },
+      "out": { "type": "stdout", "filename": "./log/error.log" }
+    },
+    "categories": {
+      "default": { "appenders": [ "out" ], "level": "debug" },
+      "errlog": { "appenders": [ "logFile" ], "level": "log" }
+    }
+}
