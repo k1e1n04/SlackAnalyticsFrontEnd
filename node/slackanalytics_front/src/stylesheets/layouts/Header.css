@@ -1,0 +1,51 @@
+
+
+/* ヘッダーロゴ */
+.header-logo img{
+    margin-left: 10px;
+    height: 35px;
+}
+/* 上部ヘッダー */
+#header-top{
+    background-color: #fff;
+    /* 上から1番目 */
+    z-index: 100;
+    height: 40px;
+    width: 100vw;
+    /* 上部ヘッダーに下線を引く */
+    border-bottom: 1px solid rgb(222, 222, 222);
+    /* 固定 */
+    position: fixed;
+}
+
+/* 左部ヘッダー */
+#header-left{
+    /* 固定 */
+    position: fixed;
+    /* 上から2番目 */
+    z-index: 99;
+    padding-top: 40px;
+    width: 250px;
+    background-color: rgba(37, 43, 43, 0.738);
+    height: 100vh;
+}
+
+/* 左部ヘッダーのリンク一覧 */
+.list-group{
+    margin-top: 10px;
+}
+
+.list-group-item{
+    color: white;
+    background-color: rgba(37, 43, 43, 0);
+}
+
+.list-group a{
+    color: white;
+}
+
+/* 左部ヘッダーのリンク一覧ホバー時 */
+.list-group a:hover{
+    color: rgb(91, 166, 174);
+    transition: 0.5s;
+}
