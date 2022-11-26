@@ -2,9 +2,9 @@ import { useCookies } from 'react-cookie';
 import { useDispatch,useSelector } from 'react-redux'
 import { renderMatches, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { isLoggedInOn,isLoggedInOff } from "../stores/Users";
+import { isLoggedInOff } from "../stores/Users";
 import { apiURL } from '../App';
-import React, {useLayoutEffect} from 'react';
+
 
 const TokenRefresh = () => {
     const navigate = useNavigate();
@@ -42,7 +42,7 @@ const TokenRefresh = () => {
             }
         });
     }
-    useLayoutEffect(() => {
+    // useLayoutEffect(() => {
     if(isLoggedIn){
         // isLoggedInがTrueで JWTがある
         if(cookies.accesstoken !== undefined){
@@ -58,7 +58,7 @@ const TokenRefresh = () => {
         navigate('/login');
         }
     }
-    },[]);
+    // },[]);
 }
 
 export default TokenRefresh

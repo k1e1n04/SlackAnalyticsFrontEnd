@@ -4,7 +4,6 @@ import { useCookies } from 'react-cookie';
 import axios from 'axios';
 import { renderMatches, useNavigate } from 'react-router-dom';
 import { Table,TableHead,TableBody,TableRow,TableCell  } from'@mui/material';
-import { DataGrid } from '@mui/x-data-grid';
 import '../stylesheets/views/views.css';
 
 function BaseList(){

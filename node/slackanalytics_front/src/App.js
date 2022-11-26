@@ -7,14 +7,17 @@ import BaseList from './views/Base';
 import Top from './Top';
 import Header from './layouts/Header';
 import TokenRefresh from './auth/TokenRefresh';
+import React, {useLayoutEffect} from 'react';
 
 // APIサーバーのURLを指定
 export const apiURL=process.env.REACT_APP_API_URL
 
 const App = () => {
+    useLayoutEffect(() => {
+      <TokenRefresh/>
+    })
     return (
       <BrowserRouter>
-          <TokenRefresh/>
           <Header/>
             <div className="main">
                 <Routes>
